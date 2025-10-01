@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script defer type="module" src="main.js"></script>
+        <title>Art Something</title>
+        <link rel="stylesheet" href="global.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Art Something</h1>
+        </header>
+        <main class="tab">
+            <div class="tab__list">
+                <button data-tab="featured" class="tab__list__button">
+                    Artwork of the day
+                </button>
+                <button data-tab="search" class="tab__list__button">
+                    Search
+                </button>
+                <button data-tab="favourites" class="tab__list__button">
+                    Favourites
+                </button>
+                <button data-tab="about" class="tab__list__button">
+                    About
+                </button>
+            </div>
+            <section data-tab="featured" class="tab__content"></section>
+            <section data-tab="search" class="tab__content">
+                <form class="form__container">
+                    <label class="form__container__label" for="search-input"
+                        >Search for artworks</label
+                    >
+                    <input
+                        class="form__container__input"
+                        type="text"
+                        name="search-input"
+                        id="search-input"
+                        placeholder="Type anything..."
+                    />
+                    <button
+                        class="form__container__btn transition-1"
+                        type="submit"
+                    >
+                        Search
+                    </button>
+                </form>
+            </section>
+            <section data-tab="favourites" class="tab__content"></section>
+            <section data-tab="about" class="tab__content">
+                <h2>About</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eius illum quis alias, labore quia natus iste similique
+                    placeat, praesentium totam unde excepturi quam, eaque
+                    voluptas debitis veritatis nisi. Eveniet, fuga!
+                </p>
+            </section>
+        </main>
+    </body>
+</html>
