@@ -24,6 +24,15 @@ body {
     margin: 0 auto;
 }
 
+.tab__list {
+    margin: 20px;
+}
+
+form {
+    background-color: var(--bg-accent-color);
+    padding: 10px;
+}
+
 .tab__list__button {
     background-color: var(--bg-accent-color);
     color: var(--main-color);
