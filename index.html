@@ -9,11 +9,14 @@
     </head>
     <body>
         <header>
-            <h1>Art Something</h1>
+            <h1 class="title h1">Art Something</h1>
         </header>
         <main class="tab">
             <div class="tab__list">
-                <button data-tab="featured" class="tab__list__button">
+                <button
+                    data-tab="featured"
+                    class="tab__list__button selected__button"
+                >
                     Artwork of the day
                 </button>
                 <button data-tab="search" class="tab__list__button">
@@ -26,7 +29,13 @@
                     About
                 </button>
             </div>
-            <section data-tab="featured" class="tab__content"></section>
+
+            <section
+                data-tab="featured"
+                class="tab__content selected__tab__content"
+            >
+                <h2 class="title h2">Featured Today:</h2>
+            </section>
             <section data-tab="search" class="tab__content">
                 <form class="form__container">
                     <label class="form__container__label" for="search-input"
@@ -49,7 +58,7 @@
             </section>
             <section data-tab="favourites" class="tab__content"></section>
             <section data-tab="about" class="tab__content">
-                <h2>About</h2>
+                <h2 class="title h2">About</h2>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Eius illum quis alias, labore quia natus iste similique
