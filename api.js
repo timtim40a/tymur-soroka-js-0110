@@ -33,7 +33,7 @@ async function getArtwork(query = '') {
             console.log(data)
 
             if (data) {
-                return data.image
+                return data.artworks[0].image
 
                 /*{
                     id: artwork.id,
@@ -50,4 +50,4 @@ async function getArtwork(query = '') {
     }
 }
 
-export default getRandomArtwork
+export default getArtwork
